@@ -159,6 +159,16 @@ ul {
 }
 .site-nav.list .current {
   color: var(--accent-text);
+  position: relative;
+}
+.current::after {
+position: absolute;
+width: 100%;
+height: 4px;
+top: 76px;
+content: "";
+background:var(--accent-text);
+border-radius: 2px;
 }
 .site-nav .link,
 .item .nav-link {
@@ -511,15 +521,42 @@ ul {
   background: var(--main-bg);
   border: 1px solid #eeeeee;
   width: 370px;
+  
 }
 .list-exmpls {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  
 }
 .link-exmpls {
   color: inherit;
   display: block;
+}
+.img-thumb{
+  position: relative;
+overflow: hidden;
+}
+.thumb{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(33, 150, 243, 0.9);
+opacity: 0;
+padding: 63px 24px;
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+.text-thumb{
+font-size: 18px;
+line-height: 1.56;
+color:var(--main-bg);
+}
+.section-exmpls-item:hover .thumb{
+  transform: translatey(0);
+  opacity: 1;
 }
 .link-exmpls:hover,
 .link-exmpls:focus {
