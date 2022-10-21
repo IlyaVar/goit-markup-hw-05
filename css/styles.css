@@ -41,7 +41,7 @@
 .address 
 .adress-list
 .address-text
-.conteiner
+.container
 .header-border
 
 
@@ -104,7 +104,7 @@ ul {
 .link {
   text-decoration: none;
 }
-.conteiner {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -225,7 +225,7 @@ border-radius: 2px;
 .logo-text-footer {
   color: var(--main-bg);
 }
-.conteiner .logo-footer {
+.container .logo-footer {
   margin-bottom: 20px;
   display: block;
 }
@@ -375,7 +375,7 @@ border-radius: 2px;
   margin-bottom: 30px;
 }
 
-.conteiner .list-item {
+.container .list-item {
   display: flex;
   gap: 30px;
 }
