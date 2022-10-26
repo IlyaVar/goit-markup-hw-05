@@ -54,7 +54,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="btn hero-btn" type="button">Замовити послугу</button>
+          <button data-modal-open class="btn hero-btn" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="main-page section">
@@ -116,25 +118,40 @@
           <h2 class="main-page-title">Чим ми займаємося</h2>
           <ul class="list list-item">
             <li class="main-page-list">
-              <img
-                src="./images/img.jpg"
-                alt="Створення структури сайту"
-                width="370"
-              />
+              <div class="img-thumb">
+                <img
+                  src="./images/img.jpg"
+                  alt="Створення структури сайту"
+                  width="370"
+                />
+                <div class="thumb-main-page">
+                  <p class="thumb-main-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="main-page-list">
-              <img
-                src="./images/img-2.jpg"
-                alt="Адаптація до всіх платформ"
-                width="370"
-              />
+              <div class="img-thumb">
+                <img
+                  src="./images/img-2.jpg"
+                  alt="Адаптація до всіх платформ"
+                  width="370"
+                />
+                <div class="thumb-main-page">
+                  <p class="thumb-main-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="main-page-list">
-              <img
-                src="./images/img-3.jpg"
-                alt="Створення дизайну сайту"
-                width="370"
-              />
+              <div class="img-thumb">
+                <img
+                  src="./images/img-3.jpg"
+                  alt="Створення дизайну сайту"
+                  width="370"
+                />
+                <div class="thumb-main-page">
+                  <p class="thumb-main-text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -392,7 +409,7 @@
             </li>
             <li class="list-brand">
               <a class="link-brand" href="#">
-                <svg  width="106px" height="60px">
+                <svg width="106px" height="60px">
                   <use href="./images/icons.svg#icon-brand"></use></svg
               ></a>
             </li>
@@ -494,9 +511,11 @@
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class="modal-btn"><svg width="30px" height="30px">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg></button>
+        <button data-modal-close type="button" class="modal-btn">
+          <svg width="30px" height="30px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
